@@ -1,0 +1,19 @@
+  {
+    "productos": [
+      { "identificador": 1, "info": "Manzanas", "pvp": 1.50 },
+      { "identificador": 2, "info": "Pan", "pvp": 0.80 },
+      { "identificador": 3, "info": "Leche", "pvp": 1.20 },
+      { "identificador": 4, "info": "Huevos", "pvp": 2.50 },
+      { "identificador": 5, "info": "Arroz", "pvp": 1.80 },
+      { "identificador": 6, "info": "Pasta", "pvp": 1.00 },
+      { "identificador": 7, "info": "Aceite", "pvp": 3.50 },
+      { "identificador": 8, "info": "Azúcar", "pvp": 1.30 },
+      { "identificador": 9, "info": "Sal", "pvp": 0.60 },
+      { "identificador": 10, "info": "Café", "pvp": 4.20 },
+      { "identificador": 11, "info": "Queso", "pvp": 3.80 },
+      { "identificador": 12, "info": "Jamón", "pvp": 5.50 },
+      { "identificador": 13, "info": "Pollo", "pvp": 6.00 },
+      { "identificador": 14, "info": "Pescado", "pvp": 8.50 },
+      { "identificador": 15, "info": "Verduras", "pvp": 2.00 }
+    ]
+  }

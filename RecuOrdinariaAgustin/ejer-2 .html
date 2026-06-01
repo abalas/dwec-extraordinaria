@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Ejercicio2Examen.js" defer></script>
+    <title>Lista de Compra Interactiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 Lista de Compra Interactiva</h1>
+        
+        <div class="idFiltros">
+            <label for="idSelectorProductos">Selecciona un producto:</label>
+            <select id="idSelectorProductos">
+                <option value="">-- Selecciona un producto --</option>
+            </select>            
+        </div>
+        
+        <div>
+            <h3>Tu Lista de Compra:</h3>
+            <ul class="lista-productos" id="idlistaProductos"></ul>
+        </div>
+        
+        <div class="summary">
+            <h3 id="idResumen">Resumen</h3>
+            <p>Total de productos: <span id="idNumTotal">0</span></p>
+            <p>Importe total: <span id="idImporteTotal">0.00</span>€</p>
+        </div>
+    </div>   
+</body>
+</html>
