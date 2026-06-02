@@ -1,0 +1,340 @@
+/* ===== ESTILOS GENERALES SIMPLES ===== */
+.pagina-404-simple {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== FONDO CON ESTRELLAS ===== */
+.fondo-estrellas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.estrella {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: brillar 3s infinite;
+}
+
+@keyframes brillar {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.contenido-simple {
+  text-align: center;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* ===== NÚMERO 404 ===== */
+.numero-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.numero-4 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #ff6b6b;
+  text-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+  animation: latido 2s infinite;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.cara-404 {
+  width: 80px;
+  height: 80px;
+  background: #4ecdc4;
+  border-radius: 50%;
+  position: relative;
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.ojos {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.ojo {
+  width: 15px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  animation: parpadear 3s infinite;
+}
+
+@keyframes parpadear {
+  0%, 90%, 100% { height: 25px; }
+  95% { height: 5px; }
+}
+
+.ojo::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boca {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 10px;
+  border-radius: 0 0 20px 20px;
+  background: #ff6b6b;
+  animation: hablar 2s infinite;
+}
+
+@keyframes hablar {
+  0%, 100% { width: 30px; }
+  50% { width: 40px; }
+}
+
+/* ===== TÍTULO Y MENSAJE ===== */
+.titulo-simple {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4ecdc4;
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.mensaje-simple {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.2rem;
+  border-radius: 15px;
+  margin: 1.5rem auto;
+  max-width: 400px;
+  animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.mensaje-simple p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* ===== CONTADOR REGRESIVO ===== */
+.contador-simple {
+  background: rgba(255, 107, 107, 0.2);
+  border-radius: 15px;
+  padding: 1.2rem;
+  margin: 1.5rem auto;
+  max-width: 200px;
+}
+
+.numero-contador {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff6b6b;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 15px #ff6b6b;
+}
+
+/* ===== EMOJIS FLOTANTES ===== */
+.emoji-flotante {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  animation: rebotar 3s infinite;
+}
+
+.emoji:nth-child(1) { animation-delay: 0s; }
+.emoji:nth-child(2) { animation-delay: 0.5s; }
+.emoji:nth-child(3) { animation-delay: 1s; }
+
+@keyframes rebotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* ===== BOTONES ===== */
+.botones-simples {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.boton-volver, .boton-inicio {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.boton-volver {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid #4ecdc4;
+}
+
+.boton-volver:hover {
+  background: #4ecdc4;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+}
+
+.boton-inicio {
+  background: linear-gradient(135deg, #ff6b6b, #ffa726);
+  color: white;
+}
+
+.boton-inicio:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* ===== MENSAJE FINAL ===== */
+.mensaje-final {
+  background: rgba(78, 205, 196, 0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 300px;
+  animation: aparecer 0.5s ease-out;
+}
+
+.mensaje-final p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+.footer-simple {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contenido-simple {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .numero-4 {
+    font-size: 4rem;
+  }
+  
+  .cara-404 {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .titulo-simple {
+    font-size: 1.5rem;
+  }
+  
+  .botones-simples {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .boton-volver, .boton-inicio {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-simple {
+    padding: 1.5rem 1rem;
+  }
+  
+  .numero-4 {
+    font-size: 3rem;
+  }
+  
+  .cara-404 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ojos {
+    gap: 10px;
+    top: 20px;
+  }
+  
+  .ojo {
+    width: 12px;
+    height: 20px;
+  }
+  
+  .emoji-flotante {
+    gap: 1rem;
+  }
+  
+  .emoji {
+    font-size: 2rem;
+  }
+}

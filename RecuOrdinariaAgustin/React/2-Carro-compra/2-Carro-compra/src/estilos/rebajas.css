@@ -1,0 +1,319 @@
+/* Contenedor principal de la tarjeta de rebaja */
+.rebajas-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.rebaja-tarjeta {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  min-height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(145deg, #fff5f5, #fed7d7);
+  margin: 1rem;
+  border: 2px solid #fecaca;
+}
+
+.rebaja-tarjeta:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(239, 68, 68, 0.3);
+  border-color: #fca5a5;
+}
+
+/* Imagen de fondo con efecto especial */
+.rebaja-imagen-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.rebaja-img-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.1) brightness(0.9);
+  transition: all 0.5s ease;
+}
+
+.rebaja-tarjeta:hover .rebaja-img-fondo {
+  transform: scale(1.08);
+  filter: sepia(0) brightness(0.95);
+}
+
+/* Contenido centrado sobre la imagen */
+.rebaja-contenido-centrado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(239, 68, 68, 0.9) 0%,
+    rgba(239, 68, 68, 0.7) 30%,
+    rgba(239, 68, 68, 0.4) 60%,
+    transparent 100%
+  );
+  color: white;
+  text-align: center;
+}
+
+/* Nombre del producto en rebaja */
+.rebaja-nombre-centrado {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.rebaja-titulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* Precio del producto */
+.rebaja-precio-centrado {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.rebaja-precio {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fee2e2;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+/* Efecto de precio tachado */
+.rebaja-precio::before {
+  content: attr(data-old-price);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #fecaca;
+  text-decoration: line-through;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Porcentaje de rebaja - Destacado */
+.rebaja-rebaja-centrado {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+  z-index: 3;
+  border: 3px solid white;
+  animation: pulse 2s infinite;
+}
+
+.rebaja-rebaja {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.rebaja-rebaja::before {
+  content: "🔥";
+  font-size: 1rem;
+}
+
+/* Botón de añadir al carrito */
+.rebaja-boton-centrado {
+  margin: 1.2rem 0 0.8rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+.rebaja-boton {
+  width: 100%;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rebaja-boton:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5);
+}
+
+.rebaja-boton:active {
+  transform: translateY(0);
+}
+
+/* Enlace a detalles */
+.rebaja-link-centrado {
+  margin-top: 0.5rem;
+}
+
+.rebaja-link {
+  color: #fecaca;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rebaja-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+/* Animación de pulso para el badge de rebaja */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+  }
+}
+
+/* Etiqueta de "OFERTA" */
+.rebaja-tarjeta::before {
+  content: "OFERTA ESPECIAL";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fbbf24;
+  color: #78350f;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  z-index: 3;
+  transform: rotate(3deg);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rebaja-tarjeta {
+    max-width: 260px;
+    min-height: 380px;
+    margin: 0.75rem;
+  }
+
+  .rebaja-contenido-centrado {
+    padding: 1.2rem;
+  }
+
+  .rebaja-titulo {
+    font-size: 1.2rem;
+  }
+
+  .rebaja-precio {
+    font-size: 1.8rem;
+  }
+
+  .rebaja-rebaja-centrado {
+    top: 15px;
+    left: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .rebaja-boton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rebaja-tarjeta {
+    max-width: 100%;
+    min-height: 360px;
+  }
+
+  .rebaja-titulo {
+    font-size: 1.1rem;
+  }
+
+  .rebaja-rebaja-centrado {
+    top: 12px;
+    left: 12px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .rebaja-tarjeta::before {
+    top: 15px;
+    right: 15px;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* Estilos adicionales para diferenciar las tarjetas de rebaja */
+.rebaja-tarjeta .rebaja-precio {
+  position: relative;
+  display: inline-block;
+}
+
+/* Efecto de "gota" para el precio */
+.rebaja-precio::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #fee2e2, transparent);
+  border-radius: 50%;
+  opacity: 0.7;
+}

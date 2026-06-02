@@ -1,0 +1,12 @@
+{
+    "productos": [
+       { "id":"1","url": "./imagenes/manzana.jpg", "nombre": "Manzana", "precio": 5 , "ocasion": true , "porcentaje":15}, 
+       { "id":"2","url": "./imagenes/pera.jpg", "nombre": "Pera", "precio": 7 , "ocasion": false}, 
+       { "id":"3","url": "./imagenes/platano.jpg", "nombre": "banana", "precio": 4, "ocasion": true , "porcentaje": 15 }     ,
+       { "id":"4","url": "./imagenes/platano.jpg", "nombre": "Platano", "precio": 7,"ocasion": false }     
+
+    ]
+    
+    
+    
+  }
