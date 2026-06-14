@@ -1,0 +1,36 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "url": "./imagenes/zelda.jpg",
+      "nombre": "The Legend of Zelda",
+      "precio": 60,
+      "ocasion": true,
+      "porcentaje": 10
+    },
+    {
+      "id": "2",
+      "url": "./imagenes/mario.jpg",
+      "nombre": "Super Mario Odyssey",
+      "precio": 50,
+      "ocasion": false
+    },
+    {
+      "id": "3",
+      "url": "./imagenes/elden.jpg",
+      "nombre": "Elden Ring",
+      "precio": 70,
+      "ocasion": true,
+      "porcentaje": 20
+    },
+    {
+      "id": "4",
+      "url": "./imagenes/fifa.jpg",
+      "nombre": "EA Sports FC",
+      "precio": 40,
+      "ocasion": false
+    }
+  ],
+  "carrito": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
