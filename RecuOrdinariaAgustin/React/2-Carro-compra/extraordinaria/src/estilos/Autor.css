@@ -1,0 +1,92 @@
+/* ===== Página de Autor — GameVault ===== */
+.autor-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.autor-card {
+  width: 100%;
+  max-width: 640px;
+  background: #141b33;
+  border: 1px solid #283058;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 229, 255, 0.15);
+  padding: 40px;
+}
+
+/* Cabecera */
+.autor-header {
+  text-align: center;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #283058;
+}
+
+.autor-nombre {
+  margin: 0;
+  font-size: 2.6rem;
+  background: linear-gradient(135deg, #00e5ff, #ff2bd6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.autor-rol {
+  margin: 8px 0 0 0;
+  color: #9fb3c8;
+  font-size: 1.05rem;
+}
+
+/* Secciones */
+.autor-seccion {
+  margin-bottom: 28px;
+}
+
+.autor-seccion h2 {
+  font-size: 1.2rem;
+  color: #00e5ff;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.autor-seccion p {
+  margin: 0 0 10px 0;
+  color: #e6f1ff;
+  line-height: 1.6;
+}
+
+.autor-seccion strong {
+  color: #ffffff;
+}
+
+/* Chips de tecnologías */
+.autor-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.autor-tecnologias span {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  color: #00e5ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.autor-footer {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 8px;
+  border-top: 1px solid #283058;
+  color: #9fb3c8;
+  font-size: 0.9rem;
+}

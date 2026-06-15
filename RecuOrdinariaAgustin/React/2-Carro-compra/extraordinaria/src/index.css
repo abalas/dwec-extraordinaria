@@ -1,0 +1,128 @@
+/* ====================================================================
+   TEMA GLOBAL GAMEVAULT — estética gamer/tecnológica
+   Solo valores (colores, tipografía, sombras). Sin tocar la estructura.
+   ==================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --gv-bg-0: #070b16;        /* fondo más oscuro */
+  --gv-bg-1: #0d1326;        /* fondo base */
+  --gv-surface: #141b33;     /* tarjetas/superficies */
+  --gv-surface-2: #1b2342;   /* superficies elevadas */
+  --gv-border: #283058;      /* bordes sutiles */
+  --gv-cyan: #00e5ff;        /* neón principal */
+  --gv-magenta: #ff2bd6;     /* neón secundario */
+  --gv-violet: #7c4dff;      /* acento */
+  --gv-text: #e6f1ff;        /* texto principal */
+  --gv-text-dim: #9fb3c8;    /* texto secundario */
+}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', 'Segoe UI', Tahoma, sans-serif;
+  color: var(--gv-text);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124, 77, 255, 0.18), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(0, 229, 255, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--gv-bg-0) 0%, var(--gv-bg-1) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ===== Formularios reutilizables (CRUD videojuegos / login) ===== */
+.form-crear {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: var(--gv-text);
+}
+
+.form-crear h3 {
+  margin: 0 0 6px 0;
+  color: var(--gv-cyan);
+  text-transform: uppercase;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gv-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--gv-bg-1);
+  border: 1px solid var(--gv-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--gv-text);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--gv-cyan);
+  box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.18);
+}
+
+.form-crear button[type="submit"],
+.form-crear button {
+  background: linear-gradient(135deg, var(--gv-cyan) 0%, var(--gv-violet) 100%);
+  color: #06101f;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.form-crear button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 229, 255, 0.35);
+}
+
+/* Mensajes de error de validación */
+.error-message {
+  color: #ff5c7a;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ===== Scrollbar gamer ===== */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--gv-bg-0);
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--gv-cyan), var(--gv-violet));
+  border-radius: 6px;
+}

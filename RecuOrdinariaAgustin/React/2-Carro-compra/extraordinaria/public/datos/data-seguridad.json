@@ -1,0 +1,27 @@
+{
+    "productos": [
+       { "id":"1","url": "./imagenes/elden-ring.jpg", "nombre": "Elden Ring", "precio": 59.99 },
+       { "id":"2","url": "./imagenes/cyberpunk-2077.jpg", "nombre": "Cyberpunk 2077", "precio": 29.99 },
+       { "id":"3","url": "./imagenes/hades.jpg", "nombre": "Hades", "precio": 24.99 },
+       { "id":"4","url": "./imagenes/hollow-knight.jpg", "nombre": "Hollow Knight", "precio": 14.99 }
+    ]
+  }
+
+
+  {
+    "productos": [
+       { "id":"1","url": "./imagenes/elden-ring.jpg", "nombre": "Elden Ring", "precio": 59.99, "ocasion": false, "descripcion": "Action RPG de mundo abierto creado por FromSoftware y George R. R. Martin. Explora las Tierras Intermedias y conviértete en Señor del Círculo.", "categoria": "RPG" },
+       { "id":"2","url": "./imagenes/cyberpunk-2077.jpg", "nombre": "Cyberpunk 2077", "precio": 29.99, "ocasion": true, "porcentaje": 40, "descripcion": "RPG de acción en primera persona ambientado en la megalópolis de Night City, dominada por el poder, el lujo y las modificaciones corporales.", "categoria": "Acción" },
+       { "id":"3","url": "./imagenes/hades.jpg", "nombre": "Hades", "precio": 24.99, "ocasion": false, "descripcion": "Roguelike de acción donde desafiarás al dios de los muertos mientras escapas del Inframundo griego, hoja en mano.", "categoria": "Roguelike" },
+       { "id":"4","url": "./imagenes/hollow-knight.jpg", "nombre": "Hollow Knight", "precio": 14.99, "ocasion": true, "porcentaje": 25, "descripcion": "Aventura de acción metroidvania en un vasto reino subterráneo de insectos y héroes caídos llamado Hallownest.", "categoria": "Metroidvania" },
+       { "id":"5","url": "./imagenes/the-witcher-3.jpg", "nombre": "The Witcher 3: Wild Hunt", "precio": 19.99, "ocasion": false, "descripcion": "RPG de mundo abierto en el que encarnas a Geralt de Rivia, un cazador de monstruos profesional, en busca de la Cacería Salvaje.", "categoria": "RPG" },
+       { "id":"6","url": "./imagenes/stardew-valley.jpg", "nombre": "Stardew Valley", "precio": 13.99, "ocasion": false, "descripcion": "Simulador de granja donde heredas una vieja parcela y la conviertes en un hogar próspero cultivando, criando animales y haciendo amigos.", "categoria": "Simulación" },
+       { "id":"7","url": "./imagenes/doom-eternal.jpg", "nombre": "DOOM Eternal", "precio": 39.99, "ocasion": true, "porcentaje": 50, "descripcion": "Shooter frenético en primera persona. Convíertete en el Slayer y destroza a las hordas demoniacas que amenazan la Tierra.", "categoria": "Shooter" },
+       { "id":"8","url": "./imagenes/red-dead-2.jpg", "nombre": "Red Dead Redemption 2", "precio": 59.99, "ocasion": false, "descripcion": "Épica aventura de mundo abierto en el ocaso del Salvaje Oeste, siguiendo a Arthur Morgan y la banda de Dutch van der Linde.", "categoria": "Aventura" },
+       { "id":"9","url": "./imagenes/among-us.jpg", "nombre": "Among Us", "precio": 3, "ocasion": false, "descripcion": "Juego multijugador de trabajo en equipo y traición: completa tareas en la nave mientras desenmascaras al impostor.", "categoria": "Party" },
+       { "id":"10","url": "./imagenes/vampire-survivors.jpg", "nombre": "Vampire Survivors", "precio": 5, "ocasion": false, "descripcion": "Roguelike de acción minimalista: sobrevive a hordas infinitas de monstruos con armas que se disparan solas.", "categoria": "Roguelike" },
+       { "id":"11","url": "./imagenes/celeste.jpg", "nombre": "Celeste", "precio": 10, "ocasion": false, "descripcion": "Plataformas de precisión sobre la ascensión a la montaña Celeste y la superación personal. Banda sonora memorable.", "categoria": "Plataformas" },
+       { "id":"12","url": "./imagenes/cuphead.jpg", "nombre": "Cuphead", "precio": 15, "ocasion": false, "descripcion": "Run & gun clásico con estética de dibujos animados de los años 30 y combates contra jefes muy exigentes.", "categoria": "Acción" },
+       { "id":"13","url": "./imagenes/portal-2.jpg", "nombre": "Portal 2", "precio": 20, "ocasion": false, "descripcion": "Aventura de puzles en primera persona con la pistola de portales, humor brillante y física ingeniosa.", "categoria": "Puzzle" }
+    ]
+  }
